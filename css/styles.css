@@ -45,6 +45,10 @@
   align-items: center;
 }
 
+#tela .back a {
+  text-decoration: none;
+}
+
 #tela .back p {
   font-weight: 300;
   font-size: 1rem;
@@ -128,7 +132,7 @@
   }
 
   #tela .titulo h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     padding: 0;
   }
 
@@ -141,6 +145,7 @@
   #tela img {
     width: 90%;
     margin-top: 2rem;
+    opacity: 1;
   }
 
   #tela button {
@@ -186,6 +191,39 @@
   margin-top: -1rem;
 }
 
+@media screen and (min-width: 1200px) {
+  #tela {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  #tela {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  #tela {
+    height: auto;
+  }
+
+  #footer {
+    top: 0;
+    height: auto;
+    width: 100%;
+    top: 100;
+  }
+
+  #footer .logo {
+    display: none;
+  }
+
+  #footer .icons {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #footer {
     position: absolute;
@@ -202,7 +240,7 @@
   }
 
   #footer .logo img {
-    width: 70%;
+    width: 30%;
     padding: 1rem 0;
   }
 }
@@ -222,9 +260,10 @@
   border: 2px solid #ffffff;
   border-radius: 22px;
   height: auto;
+  opacity: 1;
 }
 input[type="checkbox"]:checked + img {
-  border: 5px solid #adc4c1fa;
   border-radius: 28px;
-  opacity: 0.9;
+  opacity: 0.5;
+  border: 4px solid #b8158f;
 }
